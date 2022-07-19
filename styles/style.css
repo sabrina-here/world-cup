@@ -9,11 +9,12 @@ main {
   justify-content: center;
   grid-template-columns: 85%;
 }
-section {
+
+/* top banner section */
+.top-banner {
   height: 495px;
   margin: 50px 0 50px 0;
 }
-/* top banner section */
 .top-banner .banner {
   background: #000;
   width: 100%;
@@ -40,4 +41,49 @@ section {
   height: 100%;
   margin-left: 5%;
   margin-top: 5%;
+}
+
+/* middle section */
+
+.middle {
+  display: flex;
+  justify-content: space-between;
+}
+.middle .page-links {
+  background-color: #000;
+  border-radius: 5px;
+  height: 330px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.middle .page-links a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 20px;
+  color: black;
+  background-color: white;
+  width: 60%;
+  border-radius: 5px;
+}
+#blog-link {
+  background-color: red;
+  color: white;
+}
+.middle .blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 330px);
+}
+.blogs .blog {
+  width: 240px;
+  margin: 5px;
+  border: 2px solid rgb(207, 206, 206);
+  border-radius: 9px;
+}
+.blogs .blog img {
+  width: 100%;
 }
