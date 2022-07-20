@@ -80,7 +80,7 @@ main {
 .middle .blogs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 330px);
+  grid-template-rows: repeat(2, 290px);
 }
 .blogs .blog {
   width: 240px;
@@ -88,38 +88,29 @@ main {
   border: 2px solid rgb(207, 206, 206);
   border-radius: 9px;
 }
-.blogs .blog img {
-  width: 100%;
+.blogs .blog .flag-images {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
 }
-.blogs .blog button {
-  padding: 10px 25px;
-  border: 2px solid black;
-  border-radius: 5px;
-  background-color: white;
+.blogs .blog .flag-images p {
+  font-weight: 900;
+  font-size: 13px;
 }
-.blog .info-under-img {
-  margin: 6px;
+.blogs .blog .flag-images img {
+  width: 30%;
 }
-.blog .info-under-img h1 {
+.blogs .blog .info-under-img {
+  margin-top: 50px;
+  text-align: center;
+}
+.blogs .blog .info-under-img h2 {
   font-size: 15px;
+  font-weight: 700;
 }
-.info-under-img .icons {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-}
-.info-under-img .icons .icon-des-pair {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 50%;
-}
-.info-under-img .icons p {
+.blogs .blog .info-under-img p {
+  font-size: 13px;
   color: gray;
-}
-.info-under-img .icons img {
-  width: 30px;
-  height: 35px;
 }
 
 /* footer section */
