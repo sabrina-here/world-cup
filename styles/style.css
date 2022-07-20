@@ -87,3 +87,33 @@ main {
 .blogs .blog img {
   width: 100%;
 }
+.blogs .blog button {
+  padding: 10px 25px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+.blog .info-under-img {
+  margin: 6px;
+}
+.blog .info-under-img h1 {
+  font-size: 15px;
+}
+.info-under-img .icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.info-under-img .icons .icon-des-pair {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+.info-under-img .icons p {
+  color: gray;
+}
+.info-under-img .icons img {
+  width: 30px;
+  height: 35px;
+}
