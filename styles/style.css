@@ -183,7 +183,7 @@ footer ul li {
     height: 58%;
   }
   .top-banner .banner .image img {
-    width: auto;
+    width: 300px;
     height: 100%;
     margin: 0;
   }
@@ -191,6 +191,8 @@ footer ul li {
   /* middle section */
   .middle {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .middle .page-links {
     background-color: #fff;
@@ -198,5 +200,15 @@ footer ul li {
   .middle .blogs {
     grid-template-columns: 100%;
     grid-template-rows: repeat(9, 1fr);
+    align-items: space-around;
+    justify-items: center;
+  }
+
+  /* footer section-- */
+  footer ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
