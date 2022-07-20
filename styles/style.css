@@ -119,6 +119,19 @@ main {
   width: 30px;
   height: 35px;
 }
+#view-all {
+  background-color: red;
+  color: #fff;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 10px;
+  width: 40%;
+  border: 1px solid red;
+  margin-top: 10%;
+  margin-left: 30%;
+  border-radius: 5px;
+  display: none;
+}
 
 /* footer section */
 
@@ -210,5 +223,50 @@ footer ul li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+}
+
+/* tablet design */
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  /* top banner section  */
+  .top-banner {
+    height: 350px;
+    margin: 3% 0 50px 3%;
+  }
+  .top-banner .banner .banner-title h1 {
+    font-size: 30px;
+  }
+  .top-banner .banner .image img {
+    width: 300px;
+    margin-top: 8px;
+  }
+  /* middle section */
+  .middle {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .middle .page-links {
+    width: 100%;
+    flex-direction: row;
+    align-content: space-around;
+    background-color: #fff;
+  }
+  .middle .page-links a {
+    width: 1fr;
+    margin: 2%;
+  }
+  .middle .blogs {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 330px);
+  }
+  #view-all {
+    display: block;
+  }
+
+  /* footer section  */
+  footer ul {
+    flex-wrap: wrap;
   }
 }
