@@ -11,6 +11,24 @@
       href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .ball {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: yellow;
+        position: relative;
+        left: 200px;
+      }
+      .banner:hover .ball {
+        transform: translate(-160px, -52px);
+        transition: transform 1s ease-out;
+      }
+      .goal-post {
+        transform: rotate(-5deg);
+        transform-origin: top left;
+      }
+    </style>
     <title>World-cup Blogs</title>
   </head>
   <body>
@@ -30,6 +48,12 @@
                 greatest game. Follow us today so you don't miss out on
                 anything.
               </p>
+              <div class="banner-animation">
+                <div class="goal-post">
+                  <img src="assets/goal-post.ico" width="100px" alt="" />
+                </div>
+                <div class="ball"></div>
+              </div>
             </div>
           </div>
           <div class="image">
