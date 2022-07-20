@@ -54,6 +54,7 @@ main {
   border-radius: 5px;
   height: 330px;
   width: 280px;
+  font-weight: 600;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -67,6 +68,7 @@ main {
   color: black;
   background-color: white;
   width: 60%;
+  border: 1px solid grey;
   border-radius: 5px;
 }
 #blog-link {
@@ -116,4 +118,85 @@ main {
 .info-under-img .icons img {
   width: 30px;
   height: 35px;
+}
+
+/* footer section */
+
+footer {
+  margin-top: 100px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 350px;
+}
+footer hr.footer-hr {
+  width: 80%;
+  border: 0.1px solid grey;
+}
+footer h1 {
+  font-weight: 600;
+}
+footer ul {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+footer ul li {
+  list-style: none;
+  color: gray;
+  font-size: 15px;
+}
+
+/* media query for mobile devices */
+
+@media only screen and (max-width: 600px) {
+  /* common styles */
+
+  /* top banner section */
+
+  .top-banner .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .top-banner .banner div.banner-title {
+    text-align: center;
+    height: 0px;
+    margin-top: 0;
+  }
+  .top-banner .banner .banner-title .banner-p {
+    width: 100%;
+    height: 67px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: start;
+  }
+  .top-banner .banner .banner-title h1 {
+    font-size: 25px;
+  }
+  .top-banner .banner .image {
+    height: 58%;
+  }
+  .top-banner .banner .image img {
+    width: auto;
+    height: 100%;
+    margin: 0;
+  }
+
+  /* middle section */
+  .middle {
+    flex-direction: column;
+  }
+  .middle .page-links {
+    background-color: #fff;
+  }
+  .middle .blogs {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(9, 1fr);
+  }
 }
